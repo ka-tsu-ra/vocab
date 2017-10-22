@@ -4,7 +4,9 @@
   "description": "vocab tester",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"need some tests\" && exit 1",
+    "start": "nodemon server/index.js",
+    "build": "webpack -w",
   },
   "repository": {
     "type": "git",
