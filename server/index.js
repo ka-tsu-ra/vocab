@@ -12,7 +12,6 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500).send(err.message || 'Internal server error.');
 });
 
-
 // handle every other route with index.html, which will contain
 // a script tag to the app's js file(s).
 app.get('*', function (request, response) {
