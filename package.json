@@ -1,0 +1,39 @@
+{
+  "name": "vocab",
+  "version": "1.0.0",
+  "description": "vocab tester",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katsuraku/vocab.git"
+  },
+  "author": "katsuraku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katsuraku/vocab/issues"
+  },
+  "homepage": "https://github.com/katsuraku/vocab#readme",
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.12.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-livereload-plugin": "^1.0.0"
+  }
+}
