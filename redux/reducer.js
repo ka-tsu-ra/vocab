@@ -9,6 +9,13 @@ let initialState = {
     kunyomi: 'ひ',
     onyomi: 'カ',
     compounds: '日付'
+  },
+  {
+    english: 'Moon',
+    kanji: '月',
+    kunyomi: 'つき',
+    onyomi: 'ゲツ',
+    compounds: '正月'
   }]
 };
 

@@ -6,11 +6,11 @@ const WordCard = (props) => {
   const word = props.word
   return (
       <div className="word-card-container">
-        <div className="side english">English:{word.english}</div>
-        <div className="side kanji">Kanji:{word.kanji}</div>
-        <div className="side kunyomi">kunyomi{word.kunyomi}</div>
-        <div className="side onyomi">Onyomi{word.onyomi}</div>
-        <div className="side compounds">Compounds{word.compounds}</div>
+        <div className="side english">English: {word.english}</div>
+        <div className="side kanji">Kanji: {word.kanji}</div>
+        <div className="side kunyomi">kunyomi: {word.kunyomi}</div>
+        <div className="side onyomi">Onyomi: {word.onyomi}</div>
+        <div className="side compounds">Compounds: {word.compounds}</div>
       </div>
   );
 };
