@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getVocab } from '../redux/reducer';
+import { getVocab } from '../../redux/reducer';
 import WordCard from './WordCard';
 
 class Home extends Component {
@@ -14,16 +14,19 @@ class Home extends Component {
 
   render() {
     return (
-      <div classHame="container">
-        <p>Vocab Tester</p>
+      <div className="container">
+        <h1>Vocab Tester</h1>
+        <h2>All Words</h2>
         {
           this.props.vocab
           ? (this.props.vocab.map(word => {
-              <div>
-                <WordCard content={word} />
-              </div>
+              return (
+                <div>
+                  <WordCard word={word} />
+                </div>
+              )
             }))
-          : null
+          : <p>なさそうね。。。</p>
         }
       </div>
     )

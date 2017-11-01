@@ -1,5 +1,6 @@
 let path = require('path');
 let LiveReloadPlugin = require('webpack-livereload-plugin');
+let webpack = require('webpack');
 
 module.exports = {
   entry: './client/index.js',
