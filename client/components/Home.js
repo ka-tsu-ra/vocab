@@ -19,11 +19,9 @@ class Home extends Component {
         <h2>All Words</h2>
         {
           this.props.vocab
-          ? (this.props.vocab.map(word => {
+          ? (this.props.vocab.map((word, i) => {
               return (
-                <div>
-                  <WordCard word={word} />
-                </div>
+                <WordCard word={word} key={i} />
               )
             }))
           : <p>なさそうね。。。</p>
