@@ -1,0 +1,42 @@
+#root {
+  font-family: sans-serif;
+}
+/*muahahahaha*/
+
+.word-card-container {
+  border-radius: 3px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.side {
+  border: 1px solid white;
+  border-radius: 4px;
+  grid-row:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightsteelblue;
+}
+
+.english {
+   grid-column: 1;
+ }
+
+.kanji {
+  grid-column: 2;
+}
+
+.kunyomi {
+  grid-column: 3;
+}
+
+.onyomi {
+  grid-column: 4;
+}
+
+.compounds {
+  grid-column: 5;
+}
