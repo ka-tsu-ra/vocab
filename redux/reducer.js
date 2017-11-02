@@ -1,6 +1,9 @@
 const GET_VOCAB = "GET_VOCAB";
+const getVocab = (vocab) => ({type: GET_VOCAB, vocab});
 
-export const getVocab = (vocab) => ({type: GET_VOCAB, vocab});
+export const fetchVocab = () => (dispatch) => {
+  dispatch(getVocab(initialState))
+}
 
 let initialState = {
   vocab: [{
@@ -22,7 +25,7 @@ let initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_VOCAB:
-      return initialState; // kinda like a fixture for now
+      return Object.assign({}, state, vocab)
     default:
       return state;
   }

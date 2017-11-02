@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getVocab } from '../../redux/reducer';
+import { fetchVocab } from '../../redux/reducer';
 import WordCard from './WordCard';
 
 class Home extends Component {
@@ -9,7 +9,7 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    getVocab();
+    fetchVocab();
   }
 
   render() {
@@ -32,5 +32,5 @@ class Home extends Component {
 }
 
 const mapState = ({ vocab }) => ({ vocab });
-const mapDispatch = { getVocab };
+const mapDispatch = { fetchVocab };
 export default connect(mapState, mapDispatch)(Home);
